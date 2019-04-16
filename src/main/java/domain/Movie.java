@@ -22,6 +22,18 @@ public class Movie {
         playSchedules.add(playSchedule);
     }
 
+    public String getName() {
+        return this.name;
+    }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public PlaySchedule getPlaySchedule(int index) {
+        return playSchedules.get(index - 1);
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
